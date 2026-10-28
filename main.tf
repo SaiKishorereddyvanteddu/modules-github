@@ -6,5 +6,5 @@ resource "aws_instance" "myvm"{
   }
 }
 resource "aws_eip" "lb"{
-  instance=aws_instance.example.id
+  instance=aws_instance.myvm.id
 }
