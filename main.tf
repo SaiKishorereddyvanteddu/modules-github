@@ -5,6 +5,3 @@ resource "aws_instance" "myvm"{
      Name="testing VM"
   }
 }
-resource "aws_eip" "lb"{
-  instance=aws_instance.myvm.id
-}
